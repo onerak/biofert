@@ -1,0 +1,31 @@
+function insert(enteredValue){
+	document.getElementById('operationResult').innerHTML = number;
+	
+	var input = document.getElementById('operationResult').innerHTML; 
+	document.getElementById('operationResult').innerHTML = input + enteredValue; 
+}
+
+
+function clean() {
+	
+	document.getElementById('operationResult').innerHTML = "";
+}
+
+function back() {
+	var input = document.getElementById('operationResult').innerHTML;
+	document.getElementById('operationResult').innerHTML = input.substring(0, input.length -1)
+}
+
+function calculaOperacao() {
+	var input = document.getElementById('operationResult').innerHTML; 
+	if(input.length > 0) { 
+		document.getElementById('operationResult').innerHTML = eval(input); 
+	} else { 
+
+		
+		var errorMessage = '<strong style="font-size=15px">Nada a calcular</strong>';
+		document.getElementById('operationResult').innerHTML = errorMessage;*/
+
+		document.getElementById('operationResult').innerHTML = "Nada a calcular"; 
+	}
+}	
